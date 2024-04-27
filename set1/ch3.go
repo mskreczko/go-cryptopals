@@ -5,7 +5,7 @@ import (
     "log"
 )
 
-func score(input []byte) float64 {
+func Score(input []byte) float64 {
     freq_table := map[string]float64 {
         "e": 11.1607,
         "a": 8.4966,
@@ -59,7 +59,7 @@ func SingleByteXor(input string) string {
     best_score := 0.0
     var best_key byte
     for i := 0; i < 256; i++ {
-        result := score(xor(byte_input, byte(i)))
+        result := Score(xor(byte_input, byte(i)))
         if result > best_score {
             best_score = result
             best_key = byte(i)

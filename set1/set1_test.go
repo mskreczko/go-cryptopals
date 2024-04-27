@@ -25,3 +25,11 @@ func TestChall3(t *testing.T) {
         t.Fatalf("Wrong result")
     }
 }
+
+func TestChall4(t *testing.T) {
+    result := DetectSingleByteXor("4.txt")
+
+    if result != "Now that the party is jumping"  {
+        t.Fatalf("Wrong result")
+    }
+}
