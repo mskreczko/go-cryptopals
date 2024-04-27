@@ -17,3 +17,11 @@ func TestChall2(t *testing.T) {
         t.Fatalf("Wrong result")
     }
 }
+
+func TestChall3(t *testing.T) {
+    result := SingleByteXor("1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736")
+
+    if result != "Cooking MC's like a pound of bacon" {
+        t.Fatalf("Wrong result")
+    }
+}
